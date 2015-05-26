@@ -24,4 +24,14 @@ Por otro lado, las funciones son objetos por lo tanto además de llamarlas
 podemos tratarla como un dato más, pasarla como argumento en otra función, etc.
 
 Esta flexibilidad permite hacer cosas muy interesantes de forma bastante
-consisa (aunque a veces un poco críptica al principio).
+concisa (aunque a veces un poco críptica al principio).
+
+Pero la plataforma tiene algo más que solo JavaScript, tiene una forma
+particular de escribir javascript mediante el uso de módulos y los módulos son
+simplemente un objeto, en la mayoría de los casos una función.
+
+## Lo mejor
+
+Sin embargo lo mejor de node no es node, sino el gestor de paquetes NPM (node
+package manager), que aprovecha la modularización de node para hacer
+paquetes muy poco acoplados que proveen mucha flexibilidad.
