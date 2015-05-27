@@ -35,3 +35,7 @@ simplemente un objeto, en la mayoría de los casos una función.
 Sin embargo lo mejor de node no es node, sino el gestor de paquetes NPM (node
 package manager), que aprovecha la modularización de node para hacer
 paquetes muy poco acoplados que proveen mucha flexibilidad.
+
+# Actividad
+
+Escribir un hola mundo usando node. Hay que usar require!
