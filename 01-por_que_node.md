@@ -15,6 +15,8 @@ navegador cosa que lo hace un poco menos útil. Node permite usarlo en el
 servidor, permite hacer aplicaciones *en serio* usandoló y abre así muchas
 oportunidades interesantes.
 
+## JavaScript
+
 JavaScript está re-bueno por varias razones, tiene una idea de objetos simple y
 a la vez clara, los objetos son lo que en otros lenguajes llamaríamos
 diccionarios o hash. Un conjunto de valores asociados a claves, pero algunas de
@@ -26,11 +28,15 @@ podemos tratarla como un dato más, pasarla como argumento en otra función, etc
 Esta flexibilidad permite hacer cosas muy interesantes de forma bastante
 concisa (aunque a veces un poco críptica al principio).
 
+Otra ventaja del lenguaje es que el eje está puesto en los eventos y
+procesamiento asíncrono de forma que facilita el desarrollo de aplicaciones
+distribuidas que se pueden comunicar mediante eventos evitando bloqueos.
+
+## Módulos
+
 Pero la plataforma tiene algo más que solo JavaScript, tiene una forma
 particular de escribir javascript mediante el uso de módulos y los módulos son
 simplemente un objeto, en la mayoría de los casos una función.
-
-## Lo mejor
 
 Sin embargo lo mejor de node no es node, sino el gestor de paquetes NPM (node
 package manager), que aprovecha la modularización de node para hacer
