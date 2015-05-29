@@ -32,15 +32,27 @@ Otra ventaja del lenguaje es que el eje está puesto en los eventos y
 procesamiento asíncrono de forma que facilita el desarrollo de aplicaciones
 distribuidas que se pueden comunicar mediante eventos evitando bloqueos.
 
-## Módulos
+# Módulos
 
 Pero la plataforma tiene algo más que solo JavaScript, tiene una forma
-particular de escribir javascript mediante el uso de módulos y los módulos son
-simplemente un objeto, en la mayoría de los casos una función.
+particular de escribirlo mediante el uso de módulos. Los módulos son
+simplemente un archivo javascript, que exporta simplemente un objeto, en
+la mayoría de los casos una función.
 
-Sin embargo lo mejor de node no es node, sino el gestor de paquetes NPM (node
-package manager), que aprovecha la modularización de node para hacer
-paquetes muy poco acoplados que proveen mucha flexibilidad.
+## No hay estado
+
+Otra ventaja del require de Node, es que los módulos están fuertemente
+encapsulados, de forma en que se hace posible disminuir el estado. O sea,
+tenemos a disposición la principal ventaja de la programación funcional sin
+pagar el precio.
+
+Esto significa que cuando uno hace `var http = require('connect');` eso no
+afecta el estado de la aplicación más que en el valor de la variable http. Eso
+no es menor, en ruby eso es lisa y llanamente imposible, e incluso en
+javascript es imposible (WAT!).
+
+Obviamente que podemos hacer las cosas mal y afectar el estado global desde
+dentro de un módulo, pero eso es un **gran** error y debe ser evitado!
 
 # Actividad
 

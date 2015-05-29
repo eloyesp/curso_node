@@ -1,24 +1,13 @@
 # Que aprendimos
 
+Sin embargo lo mejor de node no es node, sino el gestor de paquetes NPM (node
+package manager), que aprovecha la modularización de node para hacer
+paquetes muy poco acoplados que proveen mucha flexibilidad.
+
 Una de las mejores cosas que tiene NPM es las lecciones aprendidas, de otros
 gestores de paquetes, no es tan lento como rubygems, el indice se descarga para
 hacer búsquedas rápidas, las dependencias anidadas están resueltas, los valores
 por defecto tienen sentido y la forma de correr los test está documentada.
-
-## No hay estado
-
-Otra ventaja del require de Node, es que los módulos están fuertemente
-encapsulados, de forma en que se hace posible disminuir el estado. O sea,
-tenemos a disposición la principal ventaja de la programación funcional sin
-pagar el precio.
-
-Esto significa que cuando uno hace `var http = require('connect');` eso no
-afecta el estado de la aplicación más que en el valor de la variable http. Eso
-no es menor, en ruby eso es lisa y llanamente imposible, e incluso en
-javascript es imposible (WAT!).
-
-Obviamente que podemos hacer las cosas mal y afectar el estado global desde
-dentro de un módulo, pero eso es un **gran** error y debe ser evitado!
 
 ## Dependencias anidadas
 
