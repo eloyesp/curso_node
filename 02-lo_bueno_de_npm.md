@@ -36,3 +36,31 @@ versión 2 y 3 respectivamente, el árbol de directorios sería:
 
 Esto tiene el problema de la duplicación, pero eso se soluciona utilizando `npm
 dedupe` cuya función es justamente esa.
+
+## Paquetes globales
+
+Los paquetes se pueden instalar de forma global o de forma local, la ventaja de
+realizar la instalación de esta forma, es que se evita el problema de los
+paquetes que *quedaron instalados* de cuando probamos algo y que quedan
+ensuciando para siempre, cuando se elimina la carpeta del proyecto, todos sus
+paquetes se van con él.
+
+## Binarios locales
+
+Otro problema de las instalación global es que se ensucia el path con cada
+instalación (cosa que puede llegar a ser muy molesta). NPM soluciona este
+problema de una forma muy interesante: cuando instalamos una dependencia de
+forma local, esta no ensucia el path del usuario, si queremos ejecutar un
+binario que provee una dependencia, se debe ejecutar
+`./node_modules/.bin/gulp`.
+
+Esto es bastante incomodo, así que npm permite configurar scripts en el
+`package.json` que se ejecutan utilizando el comando `npm run SCRIPT` y que
+corren en un entorno en el cual los binarios están en el path. Además hay dos
+scripts con coronita, que son 'start' y 'test' que se pueden ejecutar mediante:
+`npm start|test`.
+
+## Package.json
+
+De la misma forma, el archivo de entrada del paquete está muy bien pensado,
+suele ser muy corto y fácil de leer, sigue todas las convenciones.

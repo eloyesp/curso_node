@@ -1,4 +1,4 @@
-# Qué es Node
+## Qué es Node
 
 Node no es un lenguaje de programación ni un interprete, entonces ¿qué es?
 Según la página es una plataforma para construir aplicaciones, o sea que podría
@@ -32,7 +32,7 @@ Otra ventaja del lenguaje es que el eje está puesto en los eventos y
 procesamiento asíncrono de forma que facilita el desarrollo de aplicaciones
 distribuidas que se pueden comunicar mediante eventos evitando bloqueos.
 
-# Módulos
+## Módulos
 
 Pero la plataforma tiene algo más que solo JavaScript, tiene una forma
 particular de escribirlo mediante el uso de módulos. Los módulos son
@@ -54,6 +54,6 @@ javascript es imposible (WAT!).
 Obviamente que podemos hacer las cosas mal y afectar el estado global desde
 dentro de un módulo, pero eso es un **gran** error y debe ser evitado!
 
-# Actividad
+## Actividad
 
 Escribir un hola mundo usando node. Hay que usar require!
